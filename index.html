@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alpainters — Alpinismo Industrial</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700;800&display=swap"
+    rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
@@ -21,6 +24,7 @@
   </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="bg-black">
 
   <!-- ════════════════════════════════════════
@@ -41,7 +45,8 @@
         <a href="#servicos" class="nav-link">Serviços</a>
         <a href="#projectos" class="nav-link">Projectos</a>
         <a href="#contactos" class="nav-link">Contactos</a>
-        <a href="#" class="ml-4 bg-brand hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/30">
+        <a href="#"
+          class="ml-4 bg-brand hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/30">
           Orçamento
         </a>
       </div>
@@ -55,14 +60,14 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden bg-black/95 border-t border-white/10">
+    <div id="mobile-menu" class="md:hidden">
       <div class="px-6 py-4 flex flex-col gap-4">
-        <a href="#" class="nav-link text-base">Home</a>
-        <a href="#" class="nav-link text-base">Sobre Nós</a>
-        <a href="#" class="nav-link text-base">Serviços</a>
-        <a href="#" class="nav-link text-base">Projectos</a>
-        <a href="#" class="nav-link text-base">Contactos</a>
-        <a href="#" class="self-start bg-brand text-white font-bold text-sm px-5 py-2.5 rounded-full mt-2">Orçamento</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#sobre" class="nav-link">Sobre Nós</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#projectos" class="nav-link">Projectos</a>
+        <a href="#contactos" class="nav-link">Contactos</a>
+        <a href="#" class="bg-brand text-white font-bold px-5 py-2.5 rounded-full">Orçamento</a>
       </div>
     </div>
   </nav>
@@ -74,8 +79,7 @@
 
     <!-- ── Slide 1 — Acesso Por Corda ── -->
     <div class="slide active">
-      <img src="./image/carousel/01.jpg"
-           alt="Acesso Por Corda" class="w-full h-full object-cover" />
+      <img src="./image/carousel/01.jpg" alt="Acesso Por Corda" class="w-full h-full object-cover" />
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <p class="slide-label">AlPainters — Alpinismo Industrial</p>
@@ -90,8 +94,7 @@
 
     <!-- ── Slide 2 — Isolamento Térmico ── -->
     <div class="slide">
-      <img src="./image/carousel/02.jpg"
-           alt="Isolamento Térmico" class="w-full h-full object-cover" />
+      <img src="./image/carousel/02.jpg" alt="Isolamento Térmico" class="w-full h-full object-cover" />
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <p class="slide-label">AlPainters — Alpinismo Industrial</p>
@@ -106,8 +109,7 @@
 
     <!-- ── Slide 3 — Reabilitação de Edifícios ── -->
     <div class="slide">
-      <img src="./image/carousel/03.jpg"
-           alt="Reabilitação de Edifícios" class="w-full h-full object-cover" />
+      <img src="./image/carousel/03.jpg" alt="Reabilitação de Edifícios" class="w-full h-full object-cover" />
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <p class="slide-label">AlPainters — Alpinismo Industrial</p>
@@ -123,13 +125,14 @@
     <!-- Slide dots -->
     <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-2 z-20" id="dots">
       <button class="dot active" data-idx="0" aria-label="Slide 1"></button>
-      <button class="dot"        data-idx="1" aria-label="Slide 2"></button>
-      <button class="dot"        data-idx="2" aria-label="Slide 3"></button>
+      <button class="dot" data-idx="1" aria-label="Slide 2"></button>
+      <button class="dot" data-idx="2" aria-label="Slide 3"></button>
     </div>
 
     <!-- Scroll chevron -->
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 chevron text-white/60 z-20">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
       </svg>
     </div>
@@ -145,10 +148,12 @@
         <!-- Orçamento Gratuito -->
         <div class="feature-card flex flex-col items-center gap-4">
           <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 7H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-3M13 3h5m0 0v5m0-5L10 11" />
-              <rect x="9" y="11" width="6" height="1.5" rx="0.75" fill="currentColor" stroke="none"/>
-              <rect x="9" y="14" width="4" height="1.5" rx="0.75" fill="currentColor" stroke="none"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 7H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-3M13 3h5m0 0v5m0-5L10 11" />
+              <rect x="9" y="11" width="6" height="1.5" rx="0.75" fill="currentColor" stroke="none" />
+              <rect x="9" y="14" width="4" height="1.5" rx="0.75" fill="currentColor" stroke="none" />
             </svg>
           </div>
           <div>
@@ -160,9 +165,10 @@
         <!-- Prazo Garantido -->
         <div class="feature-card flex flex-col items-center gap-4">
           <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <circle cx="12" cy="12" r="9" stroke="currentColor"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3" />
             </svg>
           </div>
           <div>
@@ -174,8 +180,10 @@
         <!-- Qualidade Total -->
         <div class="feature-card flex flex-col items-center gap-4">
           <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <div>
@@ -187,9 +195,10 @@
         <!-- Certificados -->
         <div class="feature-card flex flex-col items-center gap-4">
           <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15a5 5 0 100-10 5 5 0 000 10z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15a5 5 0 100-10 5 5 0 000 10z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
             </svg>
           </div>
           <div>
@@ -201,8 +210,10 @@
         <!-- +27 Clientes -->
         <div class="feature-card flex flex-col items-center gap-4">
           <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-5.477-3.72M9 20H4v-2a4 4 0 015.477-3.72M15 7a4 4 0 11-8 0 4 4 0 018 0zm6 3a3 3 0 11-6 0 3 3 0 016 0zm-18 0a3 3 0 116 0 3 3 0 01-6 0z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 20h5v-2a4 4 0 00-5.477-3.72M9 20H4v-2a4 4 0 015.477-3.72M15 7a4 4 0 11-8 0 4 4 0 018 0zm6 3a3 3 0 11-6 0 3 3 0 016 0zm-18 0a3 3 0 116 0 3 3 0 01-6 0z" />
             </svg>
           </div>
           <div>
@@ -225,11 +236,7 @@
         <!-- Image column -->
         <div class="relative col-reveal">
           <div class="sobre-img-wrap rounded-2xl overflow-hidden">
-            <img
-              src="./image/sobreNos.jpg"
-              alt="Equipa Alpainters"
-              class="w-full h-[750px]"
-            />
+            <img src="./image/sobreNos.jpg" alt="Equipa Alpainters" class="w-full h-[750px]" />
           </div>
           <!-- Floating stat badge -->
           <div class="sobre-badge">
@@ -246,16 +253,21 @@
           </h2>
           <div class="w-12 h-1 bg-brand rounded-full"></div>
           <p class="text-gray-600 text-base leading-relaxed">
-            A Alpainters nasceu da paixão por transformar edifícios e garantir a sua durabilidade através de técnicas avançadas de alpinismo industrial. Fundada por um casal empreendedor dedicado, destaca-se pela sua abordagem inovadora, focada na qualidade, segurança e sustentabilidade.
+            A Alpainters nasceu da paixão por transformar edifícios e garantir a sua durabilidade através de técnicas
+            avançadas de alpinismo industrial. Fundada por um casal empreendedor dedicado, destaca-se pela sua abordagem
+            inovadora, focada na qualidade, segurança e sustentabilidade.
           </p>
           <p class="text-gray-600 text-base leading-relaxed">
-            Combinamos o que há de mais moderno em tecnologia, como vistorias técnicas com drones, com uma equipa altamente qualificada e certificada em trabalho em altura. Cada serviço é personalizado para atender às necessidades específicas de reabilitação e manutenção de fachadas.
+            Combinamos o que há de mais moderno em tecnologia, como vistorias técnicas com drones, com uma equipa
+            altamente qualificada e certificada em trabalho em altura. Cada serviço é personalizado para atender às
+            necessidades específicas de reabilitação e manutenção de fachadas.
           </p>
           <p class="text-gray-800 font-semibold text-base">
             Na Alpainters, cada projeto é um passo em direção a um mundo mais sustentável.
           </p>
           <div class="mt-2">
-            <a href="#" class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white font-bold px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105">
+            <a href="#"
+              class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white font-bold px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105">
               Conhecer Mais <span>→</span>
             </a>
           </div>
@@ -275,7 +287,8 @@
       <div class="text-center mb-20">
         <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3">O que fazemos</p>
         <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4">Nossos Serviços</h2>
-        <p class="text-gray-500 text-base max-w-xl mx-auto">Descubra a excelência da Alpainters na reabilitação e manutenção de edifícios</p>
+        <p class="text-gray-500 text-base max-w-xl mx-auto">Descubra a excelência da Alpainters na reabilitação e
+          manutenção de edifícios</p>
       </div>
 
       <!-- ── 3 Serviços principais ── -->
@@ -284,20 +297,24 @@
         <!-- Serviço 1 — Isolamento Térmico (imagem esquerda) -->
         <div class="servico-row grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div class="servico-img rounded-2xl overflow-hidden">
-            <img src="./image/servicos/01.jpg"
-                 alt="Isolamento Térmico" class="w-full h-96 object-cover" />
+            <img src="./image/servicos/01.jpg" alt="Isolamento Térmico" class="w-full h-96 object-cover" />
           </div>
           <div class="flex flex-col gap-5">
             <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase">Capoto e Outras Soluções</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Isolamento Térmico</h3>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Isolamento Térmico
+            </h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed">
-              Oferecemos serviços de isolamento térmico, incluindo o sistema de capoto, para garantir eficiência energética e conforto nos edifícios. As nossas soluções maximizam a eficiência térmica, criando ambientes mais sustentáveis e diminuindo os custos de aquecimento e arrefecimento.
+              Oferecemos serviços de isolamento térmico, incluindo o sistema de capoto, para garantir eficiência
+              energética e conforto nos edifícios. As nossas soluções maximizam a eficiência térmica, criando ambientes
+              mais sustentáveis e diminuindo os custos de aquecimento e arrefecimento.
             </p>
             <p class="text-gray-600 text-base leading-relaxed">
-              Estamos comprometidos em cumprir rigorosamente as normas europeias de renovação energética, reduzindo o consumo de energia e o impacto ambiental.
+              Estamos comprometidos em cumprir rigorosamente as normas europeias de renovação energética, reduzindo o
+              consumo de energia e o impacto ambiental.
             </p>
-            <a href="#" class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
+            <a href="#"
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
               Solicitar Orçamento
             </a>
           </div>
@@ -307,41 +324,48 @@
         <div class="servico-row grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div class="flex flex-col gap-5 lg:order-1 order-2">
             <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase">Preservação e Renovação</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Reabilitação de Fachadas</h3>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Reabilitação de
+              Fachadas</h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed">
-              A nossa equipa especializada oferece serviços que preservam e melhoram a estética e durabilidade dos edifícios. Seja para reparos, renovação ou manutenção, garantimos acabamentos de alta qualidade que protegem o seu imóvel das intempéries e do desgaste do tempo.
+              A nossa equipa especializada oferece serviços que preservam e melhoram a estética e durabilidade dos
+              edifícios. Seja para reparos, renovação ou manutenção, garantimos acabamentos de alta qualidade que
+              protegem o seu imóvel das intempéries e do desgaste do tempo.
             </p>
             <p class="text-gray-600 text-base leading-relaxed">
               Contribuímos também para a eficiência energética e sustentabilidade de cada edifício que tocamos.
             </p>
-            <a href="#" class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
+            <a href="#"
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
               Solicitar Orçamento
             </a>
           </div>
           <div class="servico-img rounded-2xl overflow-hidden lg:order-2 order-1">
-            <img src="./image/servicos/02.jpg"
-                 alt="Reabilitação de Fachadas" class="w-full h-96 object-cover" />
+            <img src="./image/servicos/02.jpg" alt="Reabilitação de Fachadas" class="w-full h-96 object-cover" />
           </div>
         </div>
 
         <!-- Serviço 3 — Pintura Interior e Exterior (imagem esquerda) -->
         <div class="servico-row grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div class="servico-img rounded-2xl overflow-hidden">
-            <img src="./image/servicos/05.png"
-                 alt="Pintura Interior e Exterior" class="w-full h-96 object-cover" />
+            <img src="./image/servicos/05.png" alt="Pintura Interior e Exterior" class="w-full h-96 object-cover" />
           </div>
           <div class="flex flex-col gap-5">
             <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase">Beleza e Resistência</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Pintura Interior e Exterior</h3>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight">Pintura Interior e
+              Exterior</h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed">
-              Oferecemos serviços profissionais de pintura de interiores e exteriores, utilizando materiais de alta qualidade e técnicas inovadoras. Combinamos beleza e resistência, garantindo acabamentos que valorizam o seu imóvel e asseguram a sua proteção a longo prazo.
+              Oferecemos serviços profissionais de pintura de interiores e exteriores, utilizando materiais de alta
+              qualidade e técnicas inovadoras. Combinamos beleza e resistência, garantindo acabamentos que valorizam o
+              seu imóvel e asseguram a sua proteção a longo prazo.
             </p>
             <p class="text-gray-600 text-base leading-relaxed">
-              Empregamos tintas ecológicas e métodos sustentáveis que reduzem o impacto ambiental, criando ambientes mais saudáveis.
+              Empregamos tintas ecológicas e métodos sustentáveis que reduzem o impacto ambiental, criando ambientes
+              mais saudáveis.
             </p>
-            <a href="#" class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
+            <a href="#"
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2">
               Solicitar Orçamento
             </a>
           </div>
@@ -359,87 +383,129 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- Card 1 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Vistoria Técnica com Drones</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Inspeções técnicas detalhadas com drones de última geração, oferecendo diagnósticos precisos e sem compromisso.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Inspeções técnicas detalhadas com drones de última
+                geração, oferecendo diagnósticos precisos e sem compromisso.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
           <!-- Card 2 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Lavagem e Manutenção de Fachadas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Lavagem com produtos adequados, removendo sujidade, fungos e poluentes, preservando a integridade do edifício.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Lavagem com produtos adequados, removendo sujidade,
+                fungos e poluentes, preservando a integridade do edifício.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
           <!-- Card 3 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Limpeza de Vidros e Fachadas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Limpeza impecável e segura em edifícios de difícil acesso, utilizando técnicas de alpinismo industrial.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Limpeza impecável e segura em edifícios de difícil
+                acesso, utilizando técnicas de alpinismo industrial.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
           <!-- Card 4 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Toldos e Estruturas Metálicas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Instalação e manutenção de toldos e estruturas metálicas, garantindo estética, funcionalidade e resistência.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Instalação e manutenção de toldos e estruturas metálicas,
+                garantindo estética, funcionalidade e resistência.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
           <!-- Card 5 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Serviços Personalizados</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Soluções à medida para cada cliente e edifício, desde a primeira vistoria até ao pós-venda.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Soluções à medida para cada cliente e edifício, desde a
+                primeira vistoria até ao pós-venda.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
           <!-- Card 6 -->
-          <div class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          <div
+            class="outro-card group flex flex-col gap-4 p-7 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div
+              class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-orange-100 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
               </svg>
             </div>
             <div>
               <h4 class="font-bold text-gray-900 text-base mb-2">Serviços Pontuais</h4>
-              <p class="text-gray-500 text-sm leading-relaxed">Pequenos reparos, substituição de elementos metálicos, impermeabilizantes e manutenção preventiva em locais de difícil acesso.</p>
+              <p class="text-gray-500 text-sm leading-relaxed">Pequenos reparos, substituição de elementos metálicos,
+                impermeabilizantes e manutenção preventiva em locais de difícil acesso.</p>
             </div>
-            <a href="#" class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar <span>→</span></a>
+            <a href="#"
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto">Solicitar
+              <span>→</span></a>
           </div>
 
         </div><!-- /grid outros serviços -->
@@ -459,45 +525,40 @@
       <div class="text-center mb-14">
         <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3">Portfólio</p>
         <h2 class="font-display font-extrabold text-white text-4xl md:text-5xl mb-4">Projectos Recentes</h2>
-        <p class="text-white/50 text-base max-w-xl mx-auto">Veja a nossa galeria de projetos recentes e o resultado do nosso trabalho</p>
+        <p class="text-white/50 text-base max-w-xl mx-auto">Veja a nossa galeria de projetos recentes e o resultado do
+          nosso trabalho</p>
       </div>
 
       <!-- Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria01/01.jpg"
-               alt="Projecto 1" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria01/01.jpg" alt="Projecto 1" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Reabilitação de Edifícios</span></div>
         </div>
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria02/01.jpg"
-               alt="Projecto 2" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria02/01.jpg" alt="Projecto 2" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Fachada Residencial</span></div>
         </div>
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria03/01.jpg"
-               alt="Projecto 3" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria03/01.jpg" alt="Projecto 3" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Isolamento Térmico</span></div>
         </div>
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria04/01.jpg"
-               alt="Projecto 4" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria04/01.jpg" alt="Projecto 4" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Alpinismo Industrial</span></div>
         </div>
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria05/01.jpg"
-               alt="Projecto 5" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria05/01.jpg" alt="Projecto 5" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Trabalho em Altura</span></div>
         </div>
 
         <div class="gallery-item rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="./image/Galeria06/01.jpg"
-               alt="Projecto 6" class="gallery-img w-full h-full object-cover" />
+          <img src="./image/Galeria06/01.jpg" alt="Projecto 6" class="gallery-img w-full h-full object-cover" />
           <div class="gallery-overlay"><span>Manutenção de Fachadas</span></div>
         </div>
 
@@ -539,8 +600,9 @@
           </div>
           <div>
             <button type="submit" class="contact-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
               </svg>
               Enviar Mensagem
             </button>
@@ -557,39 +619,49 @@
               <!-- Telefone -->
               <div class="flex items-start gap-4">
                 <div class="contact-info-icon bg-orange-50">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5">Telefone</p>
-                  <a href="tel:+351962362666" class="text-gray-900 font-bold text-base hover:text-brand transition-colors">+351 962 362 666</a>
+                  <a href="tel:+351962362666"
+                    class="text-gray-900 font-bold text-base hover:text-brand transition-colors">+351 962 362 666</a>
                 </div>
               </div>
 
               <!-- WhatsApp -->
               <div class="flex items-start gap-4">
                 <div class="contact-info-icon bg-green-50">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-500" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </div>
                 <div>
                   <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5">WhatsApp</p>
-                  <a href="https://wa.me/351962362666" target="_blank" class="text-gray-900 font-bold text-base hover:text-green-500 transition-colors">+351 962 362 666</a>
+                  <a href="https://wa.me/351962362666" target="_blank"
+                    class="text-gray-900 font-bold text-base hover:text-green-500 transition-colors">+351 962 362
+                    666</a>
                 </div>
               </div>
 
               <!-- E-mail -->
               <div class="flex items-start gap-4">
                 <div class="contact-info-icon bg-blue-50">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
                   <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5">E-mail</p>
-                  <a href="mailto:contacto@alpainters.pt" class="text-gray-900 font-bold text-base hover:text-blue-500 transition-colors">contacto@alpainters.pt</a>
+                  <a href="mailto:contacto@alpainters.pt"
+                    class="text-gray-900 font-bold text-base hover:text-blue-500 transition-colors">contacto@alpainters.pt</a>
                 </div>
               </div>
 
@@ -602,19 +674,21 @@
             <div class="flex gap-3">
               <a href="#" class="social-icon-btn" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </a>
               <a href="#" class="social-icon-btn" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                 </svg>
               </a>
               <a href="https://wa.me/351962362666" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
               </a>
             </div>
@@ -637,19 +711,21 @@
         <div class="flex items-center gap-4">
           <a href="#" aria-label="Facebook" class="footer-social">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
             </svg>
           </a>
           <a href="#" aria-label="Instagram" class="footer-social">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
             </svg>
           </a>
           <a href="https://wa.me/351962362666" target="_blank" aria-label="WhatsApp" class="footer-social">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
           </a>
         </div>
@@ -667,7 +743,8 @@
           </a>
           <p class="text-white/40 text-xs font-bold tracking-[0.2em] uppercase">Alpinismo Industrial</p>
           <p class="text-white/50 text-sm leading-relaxed mt-1">
-            Transformamos edifícios com técnicas avançadas de alpinismo industrial, garantindo qualidade e sustentabilidade.
+            Transformamos edifícios com técnicas avançadas de alpinismo industrial, garantindo qualidade e
+            sustentabilidade.
           </p>
         </div>
 
@@ -688,20 +765,26 @@
           <h4 class="footer-col-title">Contactos</h4>
           <div class="flex flex-col gap-4 mt-5">
             <a href="mailto:contacto@alpainters.pt" class="flex items-center gap-3 footer-link">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               contacto@alpainters.pt
             </a>
             <a href="tel:+351962362666" class="flex items-center gap-3 footer-link">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               +351 962 362 666
             </a>
             <a href="https://wa.me/351962362666" target="_blank" class="flex items-center gap-3 footer-link">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white/30 flex-shrink-0" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
               +351 962 362 666
             </a>
@@ -723,4 +806,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

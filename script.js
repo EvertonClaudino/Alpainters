@@ -1,9 +1,9 @@
 /* ══════════════════════════════════════
    SLIDESHOW
 ══════════════════════════════════════ */
-const slides  = document.querySelectorAll('.slide');
-const dots    = document.querySelectorAll('.dot');
-let current   = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let current = 0;
 let autoTimer;
 
 function goTo(idx) {
@@ -46,26 +46,20 @@ window.addEventListener('scroll', () => {
 /* ══════════════════════════════════════
    NAVBAR — MOBILE HAMBURGER
 ══════════════════════════════════════ */
-const hamburgerBtn  = document.getElementById('hamburger');
-const mobileMenu    = document.getElementById('mobile-menu');
-const ham1          = document.getElementById('ham1');
-const ham2          = document.getElementById('ham2');
-const ham3          = document.getElementById('ham3');
-let menuOpen        = false;
+const hamburgerBtn = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const ham1 = document.getElementById('ham1');
+const ham2 = document.getElementById('ham2');
+const ham3 = document.getElementById('ham3');
+let menuOpen = false;
 
 hamburgerBtn.addEventListener('click', () => {
   menuOpen = !menuOpen;
   mobileMenu.classList.toggle('open', menuOpen);
+  hamburgerBtn.classList.toggle('is-active', menuOpen);
 
-  if (menuOpen) {
-    ham1.style.cssText = 'transform: translateY(8px) rotate(45deg)';
-    ham2.style.cssText = 'opacity: 0';
-    ham3.style.cssText = 'transform: translateY(-8px) rotate(-45deg); width: 24px';
-  } else {
-    ham1.style.cssText = '';
-    ham2.style.cssText = '';
-    ham3.style.cssText = '';
-  }
+  // Bloquear scroll do body quando o menu está aberto
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
 });
 
 // Close mobile menu when a link is clicked
@@ -73,9 +67,8 @@ mobileMenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     menuOpen = false;
     mobileMenu.classList.remove('open');
-    ham1.style.cssText = '';
-    ham2.style.cssText = '';
-    ham3.style.cssText = '';
+    document.body.style.overflow = '';
+    hamburgerBtn.classList.remove('is-active');
   });
 });
 
@@ -185,7 +178,7 @@ const projectAlbums = [
   {
     title: 'Manutenção de Fachadas',
     images: [
-     './image/Galeria06/01.jpg',
+      './image/Galeria06/01.jpg',
       './image/Galeria06/02.jpg',
       './image/Galeria06/03.jpg',
       './image/Galeria06/04.jpg',
@@ -210,13 +203,13 @@ document.body.insertAdjacentHTML('beforeend', `
   </div>
 `);
 
-const lightbox      = document.getElementById('lightbox');
-const lightboxImg   = document.getElementById('lightbox-img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
 const lightboxTitle = document.getElementById('lightbox-title');
-const lightboxCtr   = document.getElementById('lightbox-counter');
-const lbClose       = document.getElementById('lightbox-close');
-const lbPrev        = document.getElementById('lightbox-prev');
-const lbNext        = document.getElementById('lightbox-next');
+const lightboxCtr = document.getElementById('lightbox-counter');
+const lbClose = document.getElementById('lightbox-close');
+const lbPrev = document.getElementById('lightbox-prev');
+const lbNext = document.getElementById('lightbox-next');
 
 let activeAlbum = [];
 let activeTitle = '';
@@ -258,8 +251,8 @@ function updateLightbox() {
 function openLightbox(projectIdx) {
   const album = projectAlbums[projectIdx];
   if (!album) return;
-  activeAlbum   = album.images;
-  activeTitle   = album.title;
+  activeAlbum = album.images;
+  activeTitle = album.title;
   currentImgIdx = 0;
   updateLightbox();
   lightbox.classList.add('open');
@@ -287,8 +280,8 @@ document.querySelectorAll('.gallery-item').forEach((item, i) => {
 });
 
 lbClose.addEventListener('click', closeLightbox);
-lbPrev.addEventListener('click',  prevImg);
-lbNext.addEventListener('click',  nextImg);
+lbPrev.addEventListener('click', prevImg);
+lbNext.addEventListener('click', nextImg);
 
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) closeLightbox();
@@ -296,9 +289,9 @@ lightbox.addEventListener('click', (e) => {
 
 document.addEventListener('keydown', (e) => {
   if (!lightbox.classList.contains('open')) return;
-  if (e.key === 'Escape')      closeLightbox();
-  if (e.key === 'ArrowLeft')   prevImg();
-  if (e.key === 'ArrowRight')  nextImg();
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') prevImg();
+  if (e.key === 'ArrowRight') nextImg();
 });
 
 // Contactos reveal
@@ -344,9 +337,8 @@ document.querySelectorAll('#mobile-menu a[href^="#"]').forEach(link => {
   link.addEventListener('click', () => {
     menuOpen = false;
     mobileMenu.classList.remove('open');
-    ham1.style.cssText = '';
-    ham2.style.cssText = '';
-    ham3.style.cssText = '';
+    document.body.style.overflow = '';
+    hamburgerBtn.classList.remove('is-active');
   });
 });
 

@@ -19,11 +19,14 @@ html {
 /* ══════════════════════════════════════
    BASE
 ══════════════════════════════════════ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', sans-serif;
@@ -34,6 +37,14 @@ html, body {
 ══════════════════════════════════════ */
 #navbar {
   transition: background 0.4s ease, box-shadow 0.4s ease;
+  z-index: 100;
+  /* Altíssimo para ficar acima do mobile-menu */
+}
+
+#navbar>div:first-child {
+  position: relative;
+  z-index: 50;
+  /* Garante que logo e hamburger fiquem ACIMA do menu mobile (z-index 40) */
 }
 
 #navbar.scrolled {
@@ -67,17 +78,67 @@ html, body {
   width: 100%;
 }
 
-/* Mobile menu */
+/* Mobile menu overlay */
 #mobile-menu {
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  max-height: 0;
-  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  border: none;
 }
 
 #mobile-menu.open {
-  max-height: 400px;
   opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Centered content inside mobile menu */
+#mobile-menu>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem !important;
+  text-align: center;
+}
+
+#mobile-menu .nav-link {
+  font-size: 1.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Ensure the budget button in mobile looks premium */
+#mobile-menu .bg-brand {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+/* Hamburger "X" Animation */
+#hamburger.is-active #ham1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.is-active #ham2 {
+  opacity: 0;
+}
+
+#hamburger.is-active #ham3 {
+  transform: translateY(-8px) rotate(-45deg);
+  width: 24px;
 }
 
 /* ══════════════════════════════════════
@@ -126,8 +187,15 @@ html, body {
 
 /* Animação de entrada do texto quando o slide ativa */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .slide-label,
@@ -137,10 +205,21 @@ html, body {
   opacity: 0;
 }
 
-.slide.active .slide-label { animation: fadeUp 0.7s ease 0.15s forwards; }
-.slide.active .slide-title  { animation: fadeUp 0.7s ease 0.35s forwards; }
-.slide.active .slide-sub    { animation: fadeUp 0.7s ease 0.55s forwards; }
-.slide.active .slide-btns   { animation: fadeUp 0.7s ease 0.72s forwards; }
+.slide.active .slide-label {
+  animation: fadeUp 0.7s ease 0.15s forwards;
+}
+
+.slide.active .slide-title {
+  animation: fadeUp 0.7s ease 0.35s forwards;
+}
+
+.slide.active .slide-sub {
+  animation: fadeUp 0.7s ease 0.55s forwards;
+}
+
+.slide.active .slide-btns {
+  animation: fadeUp 0.7s ease 0.72s forwards;
+}
 
 /* Tipografia */
 .slide-label {
@@ -153,7 +232,9 @@ html, body {
 }
 
 @media (min-width: 768px) {
-  .slide-label { font-size: 0.875rem; }
+  .slide-label {
+    font-size: 0.875rem;
+  }
 }
 
 .slide-title {
@@ -174,7 +255,9 @@ html, body {
 }
 
 @media (min-width: 768px) {
-  .slide-sub { font-size: 1.125rem; }
+  .slide-sub {
+    font-size: 1.125rem;
+  }
 }
 
 /* Botões */
@@ -185,7 +268,9 @@ html, body {
 }
 
 @media (min-width: 640px) {
-  .slide-btns { flex-direction: row; }
+  .slide-btns {
+    flex-direction: row;
+  }
 }
 
 .btn-primary {
@@ -196,7 +281,7 @@ html, body {
   border-radius: 9999px;
   text-decoration: none;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 12px 32px rgba(249,115,22,0.3);
+  box-shadow: 0 12px 32px rgba(249, 115, 22, 0.3);
 }
 
 .btn-primary:hover {
@@ -205,7 +290,7 @@ html, body {
 }
 
 .btn-outline {
-  border: 2px solid rgba(255,255,255,0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   color: #fff;
   font-weight: 700;
   padding: 0.875rem 2rem;
@@ -217,7 +302,7 @@ html, body {
 
 .btn-outline:hover {
   border-color: #fff;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ══════════════════════════════════════
@@ -242,8 +327,15 @@ html, body {
    HERO — SCROLL CHEVRON
 ══════════════════════════════════════ */
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 .chevron {
@@ -350,8 +442,8 @@ html, body {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease,
-              background 0.3s ease, box-shadow 0.3s ease,
-              translate 0.3s ease;
+    background 0.3s ease, box-shadow 0.3s ease,
+    translate 0.3s ease;
 }
 
 .outro-card.visible {
@@ -386,7 +478,7 @@ html, body {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(13,27,42,0.85) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(13, 27, 42, 0.85) 0%, transparent 55%);
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -490,7 +582,9 @@ html, body {
   z-index: 10;
 }
 
-#lightbox-close:hover { color: #F97316; }
+#lightbox-close:hover {
+  color: #F97316;
+}
 
 /* Setas de navegação */
 #lightbox-prev,
@@ -529,7 +623,7 @@ html, body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.25);
+  background: rgba(255, 255, 255, 0.25);
   transition: background 0.25s, transform 0.25s;
 }
 
@@ -560,11 +654,13 @@ html, body {
   font-family: 'Barlow', sans-serif;
 }
 
-.contact-input::placeholder { color: #9ca3af; }
+.contact-input::placeholder {
+  color: #9ca3af;
+}
 
 .contact-input:focus {
   border-color: #F97316;
-  box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
 }
 
 .contact-btn {
@@ -580,7 +676,7 @@ html, body {
   border: none;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 8px 24px rgba(249,115,22,0.3);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.3);
   font-family: 'Barlow', sans-serif;
 }
 
@@ -624,7 +720,9 @@ html, body {
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.contact-reveal-delay { transition-delay: 0.18s; }
+.contact-reveal-delay {
+  transition-delay: 0.18s;
+}
 
 .contact-reveal.visible {
   opacity: 1;
@@ -639,20 +737,22 @@ html, body {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-link {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.footer-link:hover { color: #F97316; }
+.footer-link:hover {
+  color: #F97316;
+}
 
 .footer-social {
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
   transition: color 0.2s, transform 0.2s;
   display: flex;
   align-items: center;
