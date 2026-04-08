@@ -32,6 +32,32 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+/* Focus styles para acessibilidade */
+*:focus-visible {
+  outline: 3px solid #F97316;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #F97316;
+  outline-offset: 3px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: #F97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+/* Remove outline para mouse clicks, mantém só para teclado */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* ══════════════════════════════════════
    NAVBAR
 ══════════════════════════════════════ */
@@ -452,6 +478,40 @@ body {
 }
 
 /* ══════════════════════════════════════
+   PREÇOS — CARDS
+══════════════════════════════════════ */
+.price-card {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease,
+    border-color 0.5s ease, box-shadow 0.5s ease, translate 0.5s ease;
+}
+
+.price-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.price-card:hover .bg-orange-50 {
+  transform: scale(1.05);
+}
+
+/* ══════════════════════════════════════
+   VALORES — CARDS
+══════════════════════════════════════ */
+.value-card {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease,
+    background 0.5s ease, border-color 0.5s ease, translate 0.5s ease;
+}
+
+.value-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ══════════════════════════════════════
    PORTFÓLIO — GALLERY
 ══════════════════════════════════════ */
 .gallery-item {
@@ -637,30 +697,91 @@ body {
 ══════════════════════════════════════ */
 .contact-label {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: #374151;
+  font-weight: 700;
+  color: #1f2937;
 }
 
 .contact-input {
   width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1.5px solid #e5e7eb;
+  padding: 0.875rem 1rem;
+  border: 2px solid #d1d5db;
   border-radius: 10px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #111827;
   background: #fff;
   outline: none;
-  transition: border-color 0.25s, box-shadow 0.25s;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
   font-family: 'Barlow', sans-serif;
 }
 
 .contact-input::placeholder {
-  color: #9ca3af;
+  color: #6b7280;
+  opacity: 1;
+}
+
+.contact-input:hover {
+  border-color: #9ca3af;
 }
 
 .contact-input:focus {
   border-color: #F97316;
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
+}
+
+/* Estilos para estado de erro */
+.contact-input[aria-invalid="true"] {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+.contact-input[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.15);
+}
+
+/* Estilos para estado desabilitado */
+.contact-input:disabled {
+  background: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Select custom styles */
+select.contact-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='%236b7280' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  background-color: #fff;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+select.contact-input:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='%23F97316' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+}
+
+select.contact-input:focus {
+  border-color: #F97316;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='%23F97316' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  background-color: #fff;
+}
+
+select.contact-input option {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #111827;
+}
+
+select.contact-input option[disabled] {
+  color: #9ca3af;
+  font-style: italic;
 }
 
 .contact-btn {
@@ -670,12 +791,12 @@ body {
   background: #F97316;
   color: #fff;
   font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
   border-radius: 9999px;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   box-shadow: 0 8px 24px rgba(249, 115, 22, 0.3);
   font-family: 'Barlow', sans-serif;
 }
@@ -683,6 +804,23 @@ body {
 .contact-btn:hover {
   background: #ea6c0a;
   transform: scale(1.04);
+  box-shadow: 0 12px 32px rgba(249, 115, 22, 0.4);
+}
+
+.contact-btn:focus-visible {
+  outline: 3px solid #1f2937;
+  outline-offset: 3px;
+}
+
+.contact-btn:active {
+  transform: scale(0.98);
+}
+
+.contact-btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 .contact-info-icon {
