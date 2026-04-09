@@ -1,14 +1,14 @@
 {
   "name": "alpainters",
   "version": "1.0.0",
-  "description": "<div align=\"center\">",
-  "main": "script.js",
+  "description": "Website institucional da Alpainters — Alpinismo Industrial",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vercel-build": "echo 'No build step required'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["alpinismo", "industrial", "fachadas", "pintura", "isolamento"],
+  "author": "Everton Claudino",
+  "license": "MIT",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2"
   }

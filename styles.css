@@ -13,7 +13,7 @@ html {
 }
 
 .nav-link.active {
-  color: #F97316;
+  color: #f97316;
 }
 
 /* ══════════════════════════════════════
@@ -29,19 +29,33 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 /* Focus styles para acessibilidade */
 *:focus-visible {
-  outline: 3px solid #F97316;
+  outline: 3px solid #f97316;
   outline-offset: 2px;
   border-radius: 4px;
 }
 
+/* Spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #F97316;
+  outline: 3px solid #f97316;
   outline-offset: 3px;
 }
 
@@ -49,7 +63,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
   outline: none;
-  border-color: #F97316;
+  border-color: #f97316;
   box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
 }
 
@@ -62,12 +76,14 @@ select:focus-visible {
    NAVBAR
 ══════════════════════════════════════ */
 #navbar {
-  transition: background 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    background 0.4s ease,
+    box-shadow 0.4s ease;
   z-index: 100;
   /* Altíssimo para ficar acima do mobile-menu */
 }
 
-#navbar>div:first-child {
+#navbar > div:first-child {
   position: relative;
   z-index: 50;
   /* Garante que logo e hamburger fiquem ACIMA do menu mobile (z-index 40) */
@@ -90,13 +106,13 @@ select:focus-visible {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #F97316;
+  background: #f97316;
   transition: width 0.3s ease;
 }
 
@@ -130,7 +146,7 @@ select:focus-visible {
 }
 
 /* Centered content inside mobile menu */
-#mobile-menu>div {
+#mobile-menu > div {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -141,7 +157,7 @@ select:focus-visible {
 
 #mobile-menu .nav-link {
   font-size: 1.5rem;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -249,7 +265,7 @@ select:focus-visible {
 
 /* Tipografia */
 .slide-label {
-  color: #F97316;
+  color: #f97316;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.25em;
@@ -264,7 +280,7 @@ select:focus-visible {
 }
 
 .slide-title {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 800;
   color: #fff;
   font-size: clamp(2.8rem, 8vw, 6rem);
@@ -300,13 +316,16 @@ select:focus-visible {
 }
 
 .btn-primary {
-  background: #F97316;
+  background: #f97316;
   color: #fff;
   font-weight: 700;
   padding: 0.875rem 2rem;
   border-radius: 9999px;
   text-decoration: none;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 12px 32px rgba(249, 115, 22, 0.3);
 }
 
@@ -322,7 +341,9 @@ select:focus-visible {
   padding: 0.875rem 2rem;
   border-radius: 9999px;
   text-decoration: none;
-  transition: border-color 0.3s, background 0.3s;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
   backdrop-filter: blur(4px);
 }
 
@@ -346,14 +367,13 @@ select:focus-visible {
 }
 
 .dot.active {
-  background: #F97316;
+  background: #f97316;
 }
 
 /* ══════════════════════════════════════
    HERO — SCROLL CHEVRON
 ══════════════════════════════════════ */
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -374,23 +394,27 @@ select:focus-visible {
 .feature-icon {
   width: 64px;
   height: 64px;
-  background: #FFF3E8;
+  background: #fff3e8;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 }
 
 .feature-card:hover .feature-icon {
   transform: translateY(-4px);
-  background: #FFE4CC;
+  background: #ffe4cc;
 }
 
 .feature-card {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .feature-card.visible {
@@ -422,7 +446,9 @@ select:focus-visible {
 #sobre .col-reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 #sobre .col-reveal.delay {
@@ -453,7 +479,9 @@ select:focus-visible {
 .servico-row {
   opacity: 0;
   transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .servico-row.visible {
@@ -467,8 +495,11 @@ select:focus-visible {
 .outro-card {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease,
-    background 0.3s ease, box-shadow 0.3s ease,
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease,
     translate 0.3s ease;
 }
 
@@ -483,8 +514,12 @@ select:focus-visible {
 .price-card {
   opacity: 0;
   transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease,
-    border-color 0.5s ease, box-shadow 0.5s ease, translate 0.5s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    translate 0.5s ease;
 }
 
 .price-card.visible {
@@ -502,8 +537,12 @@ select:focus-visible {
 .value-card {
   opacity: 0;
   transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease,
-    background 0.5s ease, border-color 0.5s ease, translate 0.5s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    background 0.5s ease,
+    border-color 0.5s ease,
+    translate 0.5s ease;
 }
 
 .value-card.visible {
@@ -519,7 +558,9 @@ select:focus-visible {
   cursor: pointer;
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .gallery-item.visible {
@@ -538,7 +579,11 @@ select:focus-visible {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(13, 27, 42, 0.85) 0%, transparent 55%);
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.85) 0%,
+    transparent 55%
+  );
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -594,7 +639,9 @@ select:focus-visible {
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7);
   transform: scale(0.94);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.18s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.18s ease;
   display: block;
   object-fit: contain;
 }
@@ -643,7 +690,7 @@ select:focus-visible {
 }
 
 #lightbox-close:hover {
-  color: #F97316;
+  color: #f97316;
 }
 
 /* Setas de navegação */
@@ -661,13 +708,16 @@ select:focus-visible {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    transform 0.2s;
 }
 
 #lightbox-prev:hover,
 #lightbox-next:hover {
   background: rgba(249, 115, 22, 0.5);
-  border-color: #F97316;
+  border-color: #f97316;
   transform: scale(1.08);
 }
 
@@ -684,11 +734,13 @@ select:focus-visible {
   height: 6px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25);
-  transition: background 0.25s, transform 0.25s;
+  transition:
+    background 0.25s,
+    transform 0.25s;
 }
 
 .lb-dot.active {
-  background: #F97316;
+  background: #f97316;
   transform: scale(1.3);
 }
 
@@ -710,8 +762,11 @@ select:focus-visible {
   color: #111827;
   background: #fff;
   outline: none;
-  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
-  font-family: 'Barlow', sans-serif;
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s,
+    background 0.25s;
+  font-family: "Barlow", sans-serif;
 }
 
 .contact-input::placeholder {
@@ -724,7 +779,7 @@ select:focus-visible {
 }
 
 .contact-input:focus {
-  border-color: #F97316;
+  border-color: #f97316;
   box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
 }
 
@@ -764,7 +819,7 @@ select.contact-input:hover {
 }
 
 select.contact-input:focus {
-  border-color: #F97316;
+  border-color: #f97316;
   box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='%23F97316' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -788,7 +843,7 @@ select.contact-input option[disabled] {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #F97316;
+  background: #f97316;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -796,9 +851,13 @@ select.contact-input option[disabled] {
   border-radius: 9999px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s;
   box-shadow: 0 8px 24px rgba(249, 115, 22, 0.3);
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 .contact-btn:hover {
@@ -842,11 +901,14 @@ select.contact-input option[disabled] {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.25s, color 0.25s, transform 0.25s;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    transform 0.25s;
 }
 
 .social-icon-btn:hover {
-  background: #F97316;
+  background: #f97316;
   color: #fff;
   transform: translateY(-2px);
 }
@@ -855,7 +917,9 @@ select.contact-input option[disabled] {
 .contact-reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .contact-reveal-delay {
@@ -886,17 +950,19 @@ select.contact-input option[disabled] {
 }
 
 .footer-link:hover {
-  color: #F97316;
+  color: #f97316;
 }
 
 .footer-social {
   color: rgba(255, 255, 255, 0.45);
-  transition: color 0.2s, transform 0.2s;
+  transition:
+    color 0.2s,
+    transform 0.2s;
   display: flex;
   align-items: center;
 }
 
 .footer-social:hover {
-  color: #F97316;
+  color: #f97316;
   transform: translateY(-2px);
 }

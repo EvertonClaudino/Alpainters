@@ -536,7 +536,11 @@ const translations = {
     "pricing.maintenance.price": "8",
     "pricing.maintenance.f1": "Lavagem com produtos profissionais",
     "pricing.maintenance.f2": "Remoção de musgo e poluentes",
-    "pricing.maintenance.f3": "Acesso por corda incluído"
+    "pricing.maintenance.f3": "Acesso por corda incluído",
+    
+    // Pricing disclaimer
+    "pricing.disclaimer.before": "* Valores indicativos. O preço final depende da área, acessibilidade e complexidade do projeto.",
+    "pricing.disclaimer.link": "Solicite um orçamento gratuito"
   },
   en: {
     // Skip link
@@ -718,7 +722,11 @@ const translations = {
     "pricing.maintenance.price": "8",
     "pricing.maintenance.f1": "Washing with professional products",
     "pricing.maintenance.f2": "Moss and pollutant removal",
-    "pricing.maintenance.f3": "Rope access included"
+    "pricing.maintenance.f3": "Rope access included",
+    
+    // Pricing disclaimer
+    "pricing.disclaimer.before": "* Indicative values. The final price depends on area, accessibility and project complexity.",
+    "pricing.disclaimer.link": "Request a free quote"
   },
 };
 
