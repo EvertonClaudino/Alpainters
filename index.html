@@ -4,25 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpainters — Empresa especializada em alpinismo industrial, reabilitação de fachadas, isolamento térmico e manutenção em altura. Mais de 10 anos de experiência em Portugal." />
-  <meta name="keywords" content="alpinismo industrial, reabilitação fachadas, isolamento térmico, pintura exterior, trabalho em altura, Portugal" />
+  <meta name="description"
+    content="Alpainters — Empresa especializada em alpinismo industrial, reabilitação de fachadas, isolamento térmico e manutenção em altura. Mais de 10 anos de experiência em Portugal." />
+  <meta name="keywords"
+    content="alpinismo industrial, reabilitação fachadas, isolamento térmico, pintura exterior, trabalho em altura, Portugal" />
   <meta name="author" content="Alpainters" />
   <meta name="theme-color" content="#F97316" />
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Alpainters — Alpinismo Industrial" />
-  <meta property="og:description" content="Soluções de alpinismo industrial com qualidade e segurança. Mais de 10 anos transformando edifícios em Portugal." />
+  <meta property="og:description"
+    content="Soluções de alpinismo industrial com qualidade e segurança. Mais de 10 anos transformando edifícios em Portugal." />
   <meta property="og:image" content="./image/LogoBranca.webp" />
   <meta property="og:url" content="https://alpainters.vercel.app" />
   <meta property="og:type" content="website" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Alpainters — Alpinismo Industrial" />
   <meta name="twitter:description" content="Soluções de alpinismo industrial com qualidade e segurança." />
-  
+
   <link rel="canonical" href="https://alpainters.vercel.app" />
-  
+
   <title>Alpainters — Alpinismo Industrial | Reabilitação de Fachadas e Isolamento Térmico</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link
@@ -47,7 +50,8 @@
 <body class="bg-black">
 
   <!-- Skip link para acessibilidade -->
-  <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[1000] focus:bg-brand focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:outline-none">
+  <a href="#main-content"
+    class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[1000] focus:bg-brand focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:outline-none">
     Pular para conteúdo principal
   </a>
 
@@ -69,31 +73,29 @@
         <a href="#servicos" class="nav-link" aria-label="Nossos serviços" data-i18n="nav.services">Serviços</a>
         <a href="#projectos" class="nav-link" aria-label="Projetos realizados" data-i18n="nav.projects">Projectos</a>
         <a href="#contactos" class="nav-link" aria-label="Entre em contato" data-i18n="nav.contact">Contactos</a>
-        
+
         <!-- Language Switcher -->
-        <button id="lang-switcher" 
-          class="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-transparent" 
-          aria-label="Mudar idioma para Inglês"
-          type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+        <button id="lang-switcher"
+          class="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-transparent"
+          aria-label="Mudar idioma para Inglês" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
           </svg>
           <span class="text-xs font-bold tracking-wider" id="lang-label">EN</span>
         </button>
-        
+
         <a href="#"
           class="ml-2 bg-brand hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/30"
-          aria-label="Solicitar orçamento gratuito"
-          data-i18n="nav.quote">
+          aria-label="Solicitar orçamento gratuito" data-i18n="nav.quote">
           Orçamento
         </a>
       </div>
 
       <!-- Hamburger -->
-      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer" 
-        aria-label="Abrir menu" 
-        aria-expanded="false"
-        aria-controls="mobile-menu">
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="mobile-menu">
         <span class="block w-6 h-0.5 bg-white transition-all duration-300" id="ham1"></span>
         <span class="block w-6 h-0.5 bg-white transition-all duration-300" id="ham2"></span>
         <span class="block w-4 h-0.5 bg-white transition-all duration-300" id="ham3"></span>
@@ -108,19 +110,20 @@
         <a href="#servicos" class="nav-link" data-i18n="nav.services">Serviços</a>
         <a href="#projectos" class="nav-link" data-i18n="nav.projects">Projectos</a>
         <a href="#contactos" class="nav-link" data-i18n="nav.contact">Contactos</a>
-        
+
         <!-- Language Switcher Mobile -->
-        <button id="lang-switcher-mobile" 
-          class="flex items-center justify-center gap-2 px-5 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300" 
-          aria-label="Mudar idioma para Inglês"
-          type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+        <button id="lang-switcher-mobile"
+          class="flex items-center justify-center gap-2 px-5 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300"
+          aria-label="Mudar idioma para Inglês" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
           </svg>
           <span class="text-sm font-bold tracking-wider" id="lang-label-mobile">EN</span>
           <span class="text-sm text-white/60">English</span>
         </button>
-        
+
         <a href="#" class="bg-brand text-white font-bold px-5 py-2.5 rounded-full" data-i18n="nav.quote">Orçamento</a>
       </div>
     </div>
@@ -168,7 +171,8 @@
       <div class="slide-content">
         <p class="slide-label" data-i18n="hero.slide3.label">AlPainters — Alpinismo Industrial</p>
         <h1 class="slide-title" data-i18n="hero.slide3.title">Reabilitação de Edifícios</h1>
-        <p class="slide-sub" data-i18n="hero.slide3.sub">Transformamos fachadas com técnicas avançadas e sustentáveis</p>
+        <p class="slide-sub" data-i18n="hero.slide3.sub">Transformamos fachadas com técnicas avançadas e sustentáveis
+        </p>
         <div class="slide-btns">
           <a href="#" class="btn-primary" data-i18n="hero.buttons.quote">Pedir Orçamento</a>
           <a href="#servicos" class="btn-outline" data-i18n="hero.buttons.services">Nossos Serviços</a>
@@ -212,7 +216,8 @@
           </div>
           <div>
             <h3 class="font-bold text-gray-900 text-base mb-1" data-i18n="features.quote.title">Orçamento Gratuito</h3>
-            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.quote.desc">Feito à medida para si, sem compromisso</p>
+            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.quote.desc">Feito à medida para si, sem
+              compromisso</p>
           </div>
         </div>
 
@@ -227,7 +232,8 @@
           </div>
           <div>
             <h3 class="font-bold text-gray-900 text-base mb-1" data-i18n="features.deadline.title">Prazo Garantido</h3>
-            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.deadline.desc">Seu projecto entregue no prazo acordado</p>
+            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.deadline.desc">Seu projecto entregue no
+              prazo acordado</p>
           </div>
         </div>
 
@@ -242,7 +248,8 @@
           </div>
           <div>
             <h3 class="font-bold text-gray-900 text-base mb-1" data-i18n="features.quality.title">Qualidade Total</h3>
-            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.quality.desc">Excelência em cada fase da manutenção</p>
+            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.quality.desc">Excelência em cada fase
+              da manutenção</p>
           </div>
         </div>
 
@@ -257,7 +264,8 @@
           </div>
           <div>
             <h3 class="font-bold text-gray-900 text-base mb-1" data-i18n="features.certified.title">Certificados</h3>
-            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.certified.desc">IRATA, APCER, IMPIC, ISQ</p>
+            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.certified.desc">IRATA, APCER, IMPIC,
+              ISQ</p>
           </div>
         </div>
 
@@ -272,7 +280,8 @@
           </div>
           <div>
             <h3 class="font-bold text-gray-900 text-base mb-1" data-i18n="features.clients.title">+27 Clientes</h3>
-            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.clients.desc">Aprovaram as nossas soluções este ano</p>
+            <p class="text-gray-500 text-sm leading-relaxed" data-i18n="features.clients.desc">Aprovaram as nossas
+              soluções este ano</p>
           </div>
         </div>
 
@@ -301,8 +310,10 @@
 
         <!-- Text column -->
         <div class="col-reveal delay flex flex-col gap-6">
-          <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase" data-i18n="about.label">Sobre a Alpainters</p>
-          <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl leading-tight" data-i18n="about.title">
+          <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase" data-i18n="about.label">Sobre a Alpainters
+          </p>
+          <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl leading-tight"
+            data-i18n="about.title">
             Um pouco sobre nós
           </h2>
           <div class="w-12 h-1 bg-brand rounded-full"></div>
@@ -344,103 +355,145 @@
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       <!-- Section header -->
       <div class="text-center mb-20">
-        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="pricing.header.label">Tabela de Preços</p>
-        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4" data-i18n="pricing.header.title">Nossos Preços</h2>
-        <p class="text-gray-500 text-base max-w-xl mx-auto" data-i18n="pricing.header.desc">Valores de referência para os nossos serviços. Solicite um orçamento personalizado para o seu projeto.</p>
+        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="pricing.header.label">Tabela
+          de Preços</p>
+        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4"
+          data-i18n="pricing.header.title">Nossos Preços</h2>
+        <p class="text-gray-500 text-base max-w-xl mx-auto" data-i18n="pricing.header.desc">Valores de referência para
+          os nossos serviços. Solicite um orçamento personalizado para o seu projeto.</p>
       </div>
 
       <!-- Cards Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- Card 1 — Pintura -->
-        <div class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
+        <div
+          class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
           <!-- Popular badge -->
           <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-            <span class="bg-brand text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider" data-i18n="pricing.popular">Mais Pedido</span>
+            <span class="bg-brand text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+              data-i18n="pricing.popular">Mais Pedido</span>
           </div>
           <!-- Icon -->
           <div class="mb-5">
-            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            <div
+              class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
               </svg>
             </div>
           </div>
           <!-- Service name -->
-          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.painting.title">Pintura de Fachadas</h3>
+          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.painting.title">Pintura
+            de Fachadas</h3>
           <p class="text-gray-400 text-xs mb-5" data-i18n="pricing.painting.subtext">Interior e Exterior</p>
           <!-- Price -->
           <div class="mb-5 pb-5 border-b border-gray-100">
             <div class="flex items-baseline gap-1">
               <span class="text-gray-400 text-sm">€</span>
-              <span class="font-display font-extrabold text-gray-900 text-4xl" data-i18n="pricing.painting.price">15</span>
+              <span class="font-display font-extrabold text-gray-900 text-4xl"
+                data-i18n="pricing.painting.price">15</span>
               <span class="text-gray-400 text-sm" data-i18n="pricing.per">/m²</span>
             </div>
           </div>
           <!-- Features -->
           <ul class="space-y-3 mb-7">
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.painting.f1">Preparação de superfície</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.painting.f2">2 demãos de tinta premium</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.painting.f3">Trabalho em altura incluído</span>
             </li>
           </ul>
           <!-- CTA -->
-          <a href="#contactos" class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105" data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
+          <a href="#contactos"
+            class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+            data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
         </div>
 
         <!-- Card 2 — Isolamento Térmico -->
-        <div class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
+        <div
+          class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
           <div class="mb-5">
-            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <div
+              class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
           </div>
-          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.insulation.title">Isolamento Térmico</h3>
+          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.insulation.title">
+            Isolamento Térmico</h3>
           <p class="text-gray-400 text-xs mb-5" data-i18n="pricing.insulation.subtext">Sistema Capoto ETICS</p>
           <div class="mb-5 pb-5 border-b border-gray-100">
             <div class="flex items-baseline gap-1">
               <span class="text-gray-400 text-sm">€</span>
-              <span class="font-display font-extrabold text-gray-900 text-4xl" data-i18n="pricing.insulation.price">35</span>
+              <span class="font-display font-extrabold text-gray-900 text-4xl"
+                data-i18n="pricing.insulation.price">35</span>
               <span class="text-gray-400 text-sm" data-i18n="pricing.per">/m²</span>
             </div>
           </div>
           <ul class="space-y-3 mb-7">
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.insulation.f1">Placa EPS ou XPS 80mm</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.insulation.f2">Reboco e acabamento texturada</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.insulation.f3">Certificação energética</span>
             </li>
           </ul>
-          <a href="#contactos" class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105" data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
+          <a href="#contactos"
+            class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+            data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
         </div>
 
         <!-- Card 3 — Reabilitação -->
-        <div class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
+        <div
+          class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
           <div class="mb-5">
-            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            <div
+              class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
           </div>
-          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.rehab.title">Reabilitação</h3>
+          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.rehab.title">
+            Reabilitação</h3>
           <p class="text-gray-400 text-xs mb-5" data-i18n="pricing.rehab.subtext">Fachadas e Edifícios</p>
           <div class="mb-5 pb-5 border-b border-gray-100">
             <div class="flex items-baseline gap-1">
@@ -451,61 +504,91 @@
           </div>
           <ul class="space-y-3 mb-7">
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.rehab.f1">Reparação de fissuras</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.rehab.f2">Impermeabilização completa</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.rehab.f3">Acabamento decorativo</span>
             </li>
           </ul>
-          <a href="#contactos" class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105" data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
+          <a href="#contactos"
+            class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+            data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
         </div>
 
         <!-- Card 4 — Limpeza / Manutenção -->
-        <div class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
+        <div
+          class="price-card group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-brand/40 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:-translate-y-2">
           <div class="mb-5">
-            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            <div
+              class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center group-hover:bg-brand/10 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
               </svg>
             </div>
           </div>
-          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.maintenance.title">Limpeza e Manutenção</h3>
+          <h3 class="font-display font-extrabold text-gray-900 text-lg mb-1" data-i18n="pricing.maintenance.title">
+            Limpeza e Manutenção</h3>
           <p class="text-gray-400 text-xs mb-5" data-i18n="pricing.maintenance.subtext">Fachadas e Vidros</p>
           <div class="mb-5 pb-5 border-b border-gray-100">
             <div class="flex items-baseline gap-1">
               <span class="text-gray-400 text-sm">€</span>
-              <span class="font-display font-extrabold text-gray-900 text-4xl" data-i18n="pricing.maintenance.price">8</span>
+              <span class="font-display font-extrabold text-gray-900 text-4xl"
+                data-i18n="pricing.maintenance.price">8</span>
               <span class="text-gray-400 text-sm" data-i18n="pricing.per">/m²</span>
             </div>
           </div>
           <ul class="space-y-3 mb-7">
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.maintenance.f1">Lavagem com produtos profissionais</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.maintenance.f2">Remoção de musgo e poluentes</span>
             </li>
             <li class="flex items-start gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span data-i18n="pricing.maintenance.f3">Acesso por corda incluído</span>
             </li>
           </ul>
-          <a href="#contactos" class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105" data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
+          <a href="#contactos"
+            class="block text-center bg-gray-900 hover:bg-brand text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+            data-i18n="pricing.cta">Pedir Orçamento Grátis</a>
         </div>
 
       </div>
 
       <!-- Disclaimer -->
       <div class="mt-12 text-center">
-        <p class="text-gray-400 text-sm" data-i18n="pricing.disclaimer">* Valores indicativos. O preço final depende da área, acessibilidade e complexidade do projeto. <a href="#contactos" class="text-brand font-semibold hover:underline">Solicite um orçamento gratuito</a>.</p>
+        <p class="text-gray-400 text-sm" data-i18n="pricing.disclaimer">* Valores indicativos. O preço final depende da
+          área, acessibilidade e complexidade do projeto. <a href="#contactos"
+            class="text-brand font-semibold hover:underline">Solicite um orçamento gratuito</a>.</p>
       </div>
     </div>
   </section>
@@ -519,9 +602,12 @@
 
       <!-- Section header -->
       <div class="text-center mb-20">
-        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="services.header.label">O que fazemos</p>
-        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4" data-i18n="services.header.title">Nossos Serviços</h2>
-        <p class="text-gray-500 text-base max-w-xl mx-auto" data-i18n="services.header.desc">Descubra a excelência da Alpainters na reabilitação e manutenção de edifícios</p>
+        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="services.header.label">O que
+          fazemos</p>
+        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4"
+          data-i18n="services.header.title">Nossos Serviços</h2>
+        <p class="text-gray-500 text-base max-w-xl mx-auto" data-i18n="services.header.desc">Descubra a excelência da
+          Alpainters na reabilitação e manutenção de edifícios</p>
       </div>
 
       <!-- ── 3 Serviços principais ── -->
@@ -533,17 +619,23 @@
             <img src="./image/servicos/01.jpg" alt="Isolamento Térmico" class="w-full h-96 object-cover" />
           </div>
           <div class="flex flex-col gap-5">
-            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.thermal.label">Capoto e Outras Soluções</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight" data-i18n="services.thermal.title">Isolamento Térmico</h3>
+            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.thermal.label">Capoto
+              e Outras Soluções</p>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight"
+              data-i18n="services.thermal.title">Isolamento Térmico</h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.thermal.text1">
-              Oferecemos serviços de isolamento térmico, incluindo o sistema de capoto, para garantir eficiência energética e conforto nos edifícios. As nossas soluções maximizam a eficiência térmica, criando ambientes mais sustentáveis e diminuindo os custos de aquecimento e arrefecimento.
+              Oferecemos serviços de isolamento térmico, incluindo o sistema de capoto, para garantir eficiência
+              energética e conforto nos edifícios. As nossas soluções maximizam a eficiência térmica, criando ambientes
+              mais sustentáveis e diminuindo os custos de aquecimento e arrefecimento.
             </p>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.thermal.text2">
-              Estamos comprometidos em cumprir rigorosamente as normas europeias de renovação energética, reduzindo o consumo de energia e o impacto ambiental.
+              Estamos comprometidos em cumprir rigorosamente as normas europeias de renovação energética, reduzindo o
+              consumo de energia e o impacto ambiental.
             </p>
             <a href="#"
-              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2" data-i18n="services.quote">
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2"
+              data-i18n="services.quote">
               Solicitar Orçamento
             </a>
           </div>
@@ -552,17 +644,22 @@
         <!-- Serviço 2 — Reabilitação de Fachadas (imagem direita) -->
         <div class="servico-row grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div class="flex flex-col gap-5 lg:order-1 order-2">
-            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.rehab.label">Preservação e Renovação</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight" data-i18n="services.rehab.title">Reabilitação de Fachadas</h3>
+            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.rehab.label">
+              Preservação e Renovação</p>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight"
+              data-i18n="services.rehab.title">Reabilitação de Fachadas</h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.rehab.text1">
-              A nossa equipa especializada oferece serviços que preservam e melhoram a estética e durabilidade dos edifícios. Seja para reparos, renovação ou manutenção, garantimos acabamentos de alta qualidade que protegem o seu imóvel das intempéries e do desgaste do tempo.
+              A nossa equipa especializada oferece serviços que preservam e melhoram a estética e durabilidade dos
+              edifícios. Seja para reparos, renovação ou manutenção, garantimos acabamentos de alta qualidade que
+              protegem o seu imóvel das intempéries e do desgaste do tempo.
             </p>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.rehab.text2">
               Contribuímos também para a eficiência energética e sustentabilidade de cada edifício que tocamos.
             </p>
             <a href="#"
-              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2" data-i18n="services.quote">
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2"
+              data-i18n="services.quote">
               Solicitar Orçamento
             </a>
           </div>
@@ -577,17 +674,23 @@
             <img src="./image/servicos/05.png" alt="Pintura Interior e Exterior" class="w-full h-96 object-cover" />
           </div>
           <div class="flex flex-col gap-5">
-            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.painting.label">Beleza e Resistência</p>
-            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight" data-i18n="services.painting.title">Pintura Interior e Exterior</h3>
+            <p class="text-brand text-xs font-bold tracking-[0.2em] uppercase" data-i18n="services.painting.label">
+              Beleza e Resistência</p>
+            <h3 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl leading-tight"
+              data-i18n="services.painting.title">Pintura Interior e Exterior</h3>
             <div class="w-10 h-1 bg-brand rounded-full"></div>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.painting.text1">
-              Oferecemos serviços profissionais de pintura de interiores e exteriores, utilizando materiais de alta qualidade e técnicas inovadoras. Combinamos beleza e resistência, garantindo acabamentos que valorizam o seu imóvel e asseguram a sua proteção a longo prazo.
+              Oferecemos serviços profissionais de pintura de interiores e exteriores, utilizando materiais de alta
+              qualidade e técnicas inovadoras. Combinamos beleza e resistência, garantindo acabamentos que valorizam o
+              seu imóvel e asseguram a sua proteção a longo prazo.
             </p>
             <p class="text-gray-600 text-base leading-relaxed" data-i18n="services.painting.text2">
-              Empregamos tintas ecológicas e métodos sustentáveis que reduzem o impacto ambiental, criando ambientes mais saudáveis.
+              Empregamos tintas ecológicas e métodos sustentáveis que reduzem o impacto ambiental, criando ambientes
+              mais saudáveis.
             </p>
             <a href="#"
-              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2" data-i18n="services.quote">
+              class="self-start bg-brand hover:bg-orange-600 text-white font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/20 mt-2"
+              data-i18n="services.quote">
               Solicitar Orçamento
             </a>
           </div>
@@ -598,8 +701,10 @@
       <!-- ── Outros Serviços ── -->
       <div class="mt-28">
         <div class="text-center mb-12">
-          <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="services.other.header.label">Também fazemos</p>
-          <h2 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl" data-i18n="services.other.header.title">Outros Serviços</h2>
+          <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3"
+            data-i18n="services.other.header.label">Também fazemos</p>
+          <h2 class="font-display font-extrabold text-gray-900 text-3xl md:text-4xl"
+            data-i18n="services.other.header.title">Outros Serviços</h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -616,12 +721,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.drone.title">Vistoria Técnica com Drones</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.drone.desc">Inspeções técnicas detalhadas com drones de última
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.drone.title">Vistoria Técnica
+                com Drones</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.drone.desc">Inspeções técnicas
+                detalhadas com drones de última
                 geração, oferecendo diagnósticos precisos e sem compromisso.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -637,12 +745,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.washing.title">Lavagem e Manutenção de Fachadas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.washing.desc">Lavagem com produtos adequados, removendo sujidade,
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.washing.title">Lavagem e
+                Manutenção de Fachadas</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.washing.desc">Lavagem com
+                produtos adequados, removendo sujidade,
                 fungos e poluentes, preservando a integridade do edifício.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -658,12 +769,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.glass.title">Limpeza de Vidros e Fachadas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.glass.desc">Limpeza impecável e segura em edifícios de difícil
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.glass.title">Limpeza de
+                Vidros e Fachadas</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.glass.desc">Limpeza impecável e
+                segura em edifícios de difícil
                 acesso, utilizando técnicas de alpinismo industrial.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -679,12 +793,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.awnings.title">Toldos e Estruturas Metálicas</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.awnings.desc">Instalação e manutenção de toldos e estruturas metálicas,
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.awnings.title">Toldos e
+                Estruturas Metálicas</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.awnings.desc">Instalação e
+                manutenção de toldos e estruturas metálicas,
                 garantindo estética, funcionalidade e resistência.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -700,12 +817,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.custom.title">Serviços Personalizados</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.custom.desc">Soluções à medida para cada cliente e edifício, desde a
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.custom.title">Serviços
+                Personalizados</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.custom.desc">Soluções à medida
+                para cada cliente e edifício, desde a
                 primeira vistoria até ao pós-venda.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -721,12 +841,15 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.occasional.title">Serviços Pontuais</h4>
-              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.occasional.desc">Pequenos reparos, substituição de elementos metálicos,
+              <h4 class="font-bold text-gray-900 text-base mb-2" data-i18n="services.other.occasional.title">Serviços
+                Pontuais</h4>
+              <p class="text-gray-500 text-sm leading-relaxed" data-i18n="services.other.occasional.desc">Pequenos
+                reparos, substituição de elementos metálicos,
                 impermeabilizantes e manutenção preventiva em locais de difícil acesso.</p>
             </div>
             <a href="#"
-              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto" data-i18n="services.solicitar">Solicitar
+              class="text-brand text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all duration-200 mt-auto"
+              data-i18n="services.solicitar">Solicitar
               <span>→</span></a>
           </div>
 
@@ -745,9 +868,12 @@
 
       <!-- Header -->
       <div class="text-center mb-14">
-        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="projects.header.label">Portfólio</p>
-        <h2 class="font-display font-extrabold text-white text-4xl md:text-5xl mb-4" data-i18n="projects.header.title">Projectos Recentes</h2>
-        <p class="text-white/50 text-base max-w-xl mx-auto" data-i18n="projects.header.desc">Veja a nossa galeria de projetos recentes e o resultado do
+        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="projects.header.label">
+          Portfólio</p>
+        <h2 class="font-display font-extrabold text-white text-4xl md:text-5xl mb-4" data-i18n="projects.header.title">
+          Projectos Recentes</h2>
+        <p class="text-white/50 text-base max-w-xl mx-auto" data-i18n="projects.header.desc">Veja a nossa galeria de
+          projetos recentes e o resultado do
           nosso trabalho</p>
       </div>
 
@@ -793,49 +919,81 @@
 
       <!-- Header -->
       <div class="text-center mb-14">
-        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="contact.header.label">Fique à Vontade</p>
-        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4" data-i18n="contact.header.title">Fale Connosco</h2>
-        <p class="text-gray-500 text-base max-w-md mx-auto" data-i18n="contact.header.desc">Peça já o seu orçamento gratuito e sem compromisso</p>
+        <p class="text-brand text-xs font-bold tracking-[0.25em] uppercase mb-3" data-i18n="contact.header.label">Fique
+          à Vontade</p>
+        <h2 class="font-display font-extrabold text-gray-900 text-4xl md:text-5xl mb-4"
+          data-i18n="contact.header.title">Fale Connosco</h2>
+        <p class="text-gray-500 text-base max-w-md mx-auto" data-i18n="contact.header.desc">Peça já o seu orçamento
+          gratuito e sem compromisso</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
         <!-- Formulário -->
-        <form id="form-contacto" class="lg:col-span-2 flex flex-col gap-6 contact-reveal" aria-label="Formulário de orçamento">
+        <form id="form-contacto" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+          method="POST" class="lg:col-span-2 flex flex-col gap-6 contact-reveal" aria-label="Formulário de orçamento">
+
+          <!-- Campos obrigatórios do Salesforce -->
+          <input type="hidden" name="oid" value="00Dd200000jEIZR">
+          <input type="hidden" name="retURL" value="https://alpainters.vercel.app/">
+          <input type="hidden" name="lead_source" value="Web">
+
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div class="flex flex-col gap-2">
-              <label for="nome" class="contact-label" data-i18n="contact.name.label">Nome Completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" class="contact-input" data-i18n-placeholder="contact.name.placeholder" required aria-required="true" />
+              <label for="nome" class="contact-label" data-i18n="contact.name.label">
+                Nome Completo
+              </label>
+              <input type="text" id="nome" name="first_name" placeholder="Seu nome" class="contact-input"
+                data-i18n-placeholder="contact.name.placeholder" required aria-required="true" />
             </div>
             <div class="flex flex-col gap-2">
-              <label for="contacto" class="contact-label" data-i18n="contact.phone.label">Contacto</label>
-              <input type="tel" id="contacto" name="contacto" placeholder="+351 000 000 000" class="contact-input" data-i18n-placeholder="contact.phone.placeholder" required aria-required="true" />
+              <label for="contacto" class="contact-label" data-i18n="contact.phone.label">
+                Contacto
+              </label>
+              <input type="tel" id="contacto" name="phone" placeholder="+351 000 000 000" class="contact-input"
+                data-i18n-placeholder="contact.phone.placeholder" required aria-required="true" />
             </div>
           </div>
+
           <div class="flex flex-col gap-2">
-            <label for="email" class="contact-label" data-i18n="contact.email.label">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" class="contact-input" data-i18n-placeholder="contact.email.placeholder" required aria-required="true" />
+            <label for="email" class="contact-label" data-i18n="contact.email.label">
+              E-mail
+            </label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" class="contact-input"
+              data-i18n-placeholder="contact.email.placeholder" required aria-required="true" />
           </div>
+
           <div class="flex flex-col gap-2">
-            <label for="servico" class="contact-label" data-i18n="contact.service.label">Serviço Pretendido</label>
-            <select id="servico" name="servico" class="contact-input" required aria-required="true">
-              <option value="" disabled selected data-i18n="contact.service.placeholder">Selecione um serviço</option>
-              <option value="isolamento-termico" data-i18n="contact.service.thermal">Isolamento Térmico</option>
-              <option value="reabilitacao-fachadas" data-i18n="contact.service.rehab">Reabilitação de Fachadas</option>
-              <option value="pintura-interior-exterior" data-i18n="contact.service.painting">Pintura Interior e Exterior</option>
-              <option value="vistoria-drones" data-i18n="contact.service.drones">Vistoria Técnica com Drones</option>
-              <option value="lavagem-fachadas" data-i18n="contact.service.washing">Lavagem e Manutenção de Fachadas</option>
-              <option value="limpeza-vidros" data-i18n="contact.service.glass">Limpeza de Vidros e Fachadas</option>
-              <option value="toldos-estruturas" data-i18n="contact.service.awnings">Toldos e Estruturas Metálicas</option>
-              <option value="servicos-personalizados" data-i18n="contact.service.custom">Serviços Personalizados</option>
-              <option value="servicos-pontuais" data-i18n="contact.service.occasional">Serviços Pontuais</option>
-              <option value="outro" data-i18n="contact.service.other">Outro</option>
+            <label for="servico" class="contact-label" data-i18n="contact.service.label">
+              Serviço Pretendido
+            </label>
+            <select id="servico" name="Servico__c" class="contact-input" required aria-required="true">
+              <option value="" disabled selected data-i18n="contact.service.placeholder">
+                Selecione um serviço
+              </option>
+              <option value="Isolamento Térmico">Isolamento Térmico</option>
+              <option value="Reabilitação de Fachadas">Reabilitação de Fachadas</option>
+              <option value="Pintura Interior e Exterior">Pintura Interior e Exterior</option>
+              <option value="Vistoria Técnica com Drones">Vistoria Técnica com Drones</option>
+              <option value="Lavagem e Manutenção de Fachadas">Lavagem e Manutenção de Fachadas</option>
+              <option value="Limpeza de Vidros e Fachadas">Limpeza de Vidros e Fachadas</option>
+              <option value="Toldos e Estruturas Metálicas">Toldos e Estruturas Metálicas</option>
+              <option value="Serviços Personalizados">Serviços Personalizados</option>
+              <option value="Serviços Pontuais">Serviços Pontuais</option>
+              <option value="Outro">Outro</option>
             </select>
           </div>
+
           <div class="flex flex-col gap-2">
-            <label for="mensagem" class="contact-label" data-i18n="contact.message.label">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva o que precisa..." class="contact-input resize-none" data-i18n-placeholder="contact.message.placeholder" required aria-required="true"></textarea>
+            <label for="mensagem" class="contact-label" data-i18n="contact.message.label">
+              Mensagem
+            </label>
+            <textarea id="mensagem" name="description" rows="6" placeholder="Descreva o que precisa..."
+              class="contact-input resize-none" data-i18n-placeholder="contact.message.placeholder" required
+              aria-required="true">
+        </textarea>
           </div>
+
           <div>
             <button type="submit" class="contact-btn" aria-label="Enviar mensagem" data-i18n="contact.submit">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
@@ -845,8 +1003,8 @@
               Enviar Mensagem
             </button>
           </div>
-        </form>
 
+        </form>
         <!-- Informações de contacto -->
         <div class="flex flex-col gap-8 contact-reveal contact-reveal-delay">
 
@@ -864,7 +1022,8 @@
                   </svg>
                 </div>
                 <div>
-                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5" data-i18n="contact.phone.label">Telefone</p>
+                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5"
+                    data-i18n="contact.phone.label">Telefone</p>
                   <a href="tel:+351962362666"
                     class="text-gray-900 font-bold text-base hover:text-brand transition-colors">+351 962 362 666</a>
                 </div>
@@ -880,7 +1039,8 @@
                   </svg>
                 </div>
                 <div>
-                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5" data-i18n="contact.whatsapp.label">WhatsApp</p>
+                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5"
+                    data-i18n="contact.whatsapp.label">WhatsApp</p>
                   <a href="https://wa.me/351962362666" target="_blank"
                     class="text-gray-900 font-bold text-base hover:text-green-500 transition-colors">+351 962 362
                     666</a>
@@ -897,7 +1057,8 @@
                   </svg>
                 </div>
                 <div>
-                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5" data-i18n="contact.email.label">E-mail</p>
+                  <p class="text-gray-400 text-xs font-bold tracking-widest uppercase mb-0.5"
+                    data-i18n="contact.email.label">E-mail</p>
                   <a href="mailto:contacto@alpainters.pt"
                     class="text-gray-900 font-bold text-base hover:text-blue-500 transition-colors">contacto@alpainters.pt</a>
                 </div>
@@ -979,7 +1140,8 @@
           <a href="#" class="font-display tracking-tight">
             <img src="./image/LogoBranca.webp" alt="" width="100">
           </a>
-          <p class="text-white/40 text-xs font-bold tracking-[0.2em] uppercase" data-i18n="footer.brand.subtitle">Alpinismo Industrial</p>
+          <p class="text-white/40 text-xs font-bold tracking-[0.2em] uppercase" data-i18n="footer.brand.subtitle">
+            Alpinismo Industrial</p>
           <p class="text-white/50 text-sm leading-relaxed mt-1" data-i18n="footer.brand.desc">
             Transformamos edifícios com técnicas avançadas de alpinismo industrial, garantindo qualidade e
             sustentabilidade.
